@@ -464,7 +464,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    650
+                    644
                 </div>
                 
 
@@ -497,29 +497,81 @@
 <ul>
 <li><p>单⾏注释：<br><code>//注释内容</code>  </p>
 </li>
-<li><p>多⾏注释：  </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"> &#x2F;*注释内容</span><br><span class="line"> 注释内容</span><br><span class="line"> 注释内容</span><br><span class="line">*&#x2F;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>⽂档注释:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;**注释内容</span><br><span class="line">*注释内容</span><br><span class="line">*注释内容</span><br><span class="line">*&#x2F;</span><br></pre></td></tr></table></figure>
-
+<li><p>多⾏注释：<br>```<br>/*注释内容<br>注释内容<br>注释内容</p>
 </li>
 </ul>
-<h3 id="关键字"><a href="#关键字" class="headerlink" title="关键字"></a>关键字</h3><p>Java 语⾔预先定义好的，有指定意义的标识符，组成程序的基本元素。<br>1、abstract 表示抽象<br>2、boolean 基本数据类型<br>3、break 跳出循环<br>4、byte 基本数据类型<br>5、case 与 switch 搭配使⽤<br>6、catch 与 try 搭配使⽤，表示捕获异常<br>7、char 基本数据类型<br>8、class 表示⼀个类<br>9、continue 跳出循环<br>10、do 与 while 搭配使⽤，表示循环<br>11、double 基本数据类型<br>12、else 与 if 搭配，流程控制<br>13、enum 枚举类型<br>14、extends 继承<br>15、final 修饰常量<br>16、float 基本数据类型<br>17、if 流程控制<br>18、implements 实现接⼝<br>19、import 引⼊某个类<br>20、int 基本数据类型<br>21、interface 表示接⼝<br>22、long 基本数据类型<br>23、native 表示本地⽅法<br>24、new 创建对象<br>25、package 表示包<br>26、private 私有<br>27、public 共有<br>28、return 返回值<br>29、short 基本数据类型<br>30、static 表示静态<br>31、super 表示⽗类<br>32、switch 与 case 搭配使⽤<br>33、synchronized 线程同步<br>34、this 表示当前实例<br>35、throw 抛出异常<br>36、throws ⽅法中主动抛出异常<br>37、try 与 catch 搭配使⽤<br>38、void 表示⽅法没有返回值<br>39、volatile 保证线程读取到最新值<br>40、while 表示循环  </p>
-<h3 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h3><ul>
-<li>数据类型  </li>
-<li>变量名  </li>
-<li>变量值  <h3 id="使⽤变量"><a href="#使⽤变量" class="headerlink" title="使⽤变量"></a>使⽤变量</h3>1、声明变量的数据类型和变量名（包含数字、字⺟、下划线、$，不能包含空格、运算符，不能⽤关键<br>字命名，不能以数字开头），⼤⼩写可以混⽤，⾸单词应该⼩写，后续单词的⾸字⺟⼤写。<br>userId、studentName （驼峰式命名法）</li>
-</ul>
-<p>2、给内存空间赋值，该值就是变量值。  </p>
-<h3 id="Java-的数据类型"><a href="#Java-的数据类型" class="headerlink" title="Java 的数据类型"></a>Java 的数据类型</h3><ul>
-<li>基本数据类型<br>byte、int、short、long、float、double、char、boolean  </li>
-</ul>
-<p><strong>数值类型（整数、⼩数）</strong><br>byte 1 个字节 (8位)<br>int 4 个字节（32位）<br>short 2 个字节（16位）<br>long 8 个字节（64位）<br>float 4 个字节（32位） 单精度浮点型<br>double 8 个字节（64位）双精度浮点型<br><strong>⾮数值类型（⽂本）</strong><br>char 字符 2 个字节（16位）<br>boolean 1/8 个字节、判断逻辑是否成⽴ true 1/false 0 </p>
-<ul>
-<li>引⽤数据类型  </li>
-</ul>
+<p>*/ </p>
+<pre><code>
+- ⽂档注释:</code></pre><p>  /**注释内容<br>  *注释内容<br>  *注释内容<br>  */</p>
+<pre><code>
+### 关键字
+Java 语⾔预先定义好的，有指定意义的标识符，组成程序的基本元素。  
+1、abstract 表示抽象  
+2、boolean 基本数据类型  
+3、break 跳出循环  
+4、byte 基本数据类型  
+5、case 与 switch 搭配使⽤  
+6、catch 与 try 搭配使⽤，表示捕获异常  
+7、char 基本数据类型  
+8、class 表示⼀个类  
+9、continue 跳出循环  
+10、do 与 while 搭配使⽤，表示循环  
+11、double 基本数据类型  
+12、else 与 if 搭配，流程控制  
+13、enum 枚举类型  
+14、extends 继承  
+15、final 修饰常量  
+16、float 基本数据类型    
+17、if 流程控制  
+18、implements 实现接⼝  
+19、import 引⼊某个类  
+20、int 基本数据类型  
+21、interface 表示接⼝  
+22、long 基本数据类型  
+23、native 表示本地⽅法  
+24、new 创建对象   
+25、package 表示包  
+26、private 私有  
+27、public 共有  
+28、return 返回值  
+29、short 基本数据类型  
+30、static 表示静态  
+31、super 表示⽗类  
+32、switch 与 case 搭配使⽤  
+33、synchronized 线程同步  
+34、this 表示当前实例  
+35、throw 抛出异常  
+36、throws ⽅法中主动抛出异常  
+37、try 与 catch 搭配使⽤  
+38、void 表示⽅法没有返回值  
+39、volatile 保证线程读取到最新值  
+40、while 表示循环  
+### 变量
+- 数据类型  
+- 变量名  
+- 变量值  
+### 使⽤变量
+1、声明变量的数据类型和变量名（包含数字、字⺟、下划线、$，不能包含空格、运算符，不能⽤关键
+字命名，不能以数字开头），⼤⼩写可以混⽤，⾸单词应该⼩写，后续单词的⾸字⺟⼤写。  
+userId、studentName （驼峰式命名法）
 
+
+2、给内存空间赋值，该值就是变量值。  
+### Java 的数据类型
+- 基本数据类型  
+byte、int、short、long、float、double、char、boolean  
+**数值类型（整数、⼩数）**  
+byte 1 个字节 (8位)  
+int 4 个字节（32位）  
+short 2 个字节（16位）  
+long 8 个字节（64位）  
+float 4 个字节（32位） 单精度浮点型  
+double 8 个字节（64位）双精度浮点型  
+**⾮数值类型（⽂本）**  
+char 字符 2 个字节（16位）  
+boolean 1/8 个字节、判断逻辑是否成⽴ true 1/false 0 
+
+- 引⽤数据类型  </code></pre>
             </div>
             <hr/>
 
@@ -737,6 +789,269 @@
     
 
     
+
+    
+        <style>
+    .valine-card {
+        margin: 1.5rem auto;
+    }
+
+    .valine-card .card-content {
+        padding: 20px 20px 5px 20px;
+    }
+
+    #vcomments textarea {
+        box-sizing: border-box;
+        background: url("/medias/comment_bg.png") 100% 100% no-repeat;
+    }
+
+    #vcomments p {
+        margin: 2px 2px 10px;
+        font-size: 1.05rem;
+        line-height: 1.78rem;
+    }
+
+    #vcomments blockquote p {
+        text-indent: 0.2rem;
+    }
+
+    #vcomments a {
+        padding: 0 2px;
+        color: #4cbf30;
+        font-weight: 500;
+        text-decoration: none;
+    }
+
+    #vcomments img {
+        max-width: 100%;
+        height: auto;
+        cursor: pointer;
+    }
+
+    #vcomments ol li {
+        list-style-type: decimal;
+    }
+
+    #vcomments ol,
+    ul {
+        display: block;
+        padding-left: 2em;
+        word-spacing: 0.05rem;
+    }
+
+    #vcomments ul li,
+    ol li {
+        display: list-item;
+        line-height: 1.8rem;
+        font-size: 1rem;
+    }
+
+    #vcomments ul li {
+        list-style-type: disc;
+    }
+
+    #vcomments ul ul li {
+        list-style-type: circle;
+    }
+
+    #vcomments table, th, td {
+        padding: 12px 13px;
+        border: 1px solid #dfe2e5;
+    }
+
+    #vcomments table, th, td {
+        border: 0;
+    }
+
+    table tr:nth-child(2n), thead {
+        background-color: #fafafa;
+    }
+
+    #vcomments table th {
+        background-color: #f2f2f2;
+        min-width: 80px;
+    }
+
+    #vcomments table td {
+        min-width: 80px;
+    }
+
+    #vcomments h1 {
+        font-size: 1.85rem;
+        font-weight: bold;
+        line-height: 2.2rem;
+    }
+
+    #vcomments h2 {
+        font-size: 1.65rem;
+        font-weight: bold;
+        line-height: 1.9rem;
+    }
+
+    #vcomments h3 {
+        font-size: 1.45rem;
+        font-weight: bold;
+        line-height: 1.7rem;
+    }
+
+    #vcomments h4 {
+        font-size: 1.25rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    #vcomments h5 {
+        font-size: 1.1rem;
+        font-weight: bold;
+        line-height: 1.4rem;
+    }
+
+    #vcomments h6 {
+        font-size: 1rem;
+        line-height: 1.3rem;
+    }
+
+    #vcomments p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    #vcomments hr {
+        margin: 12px 0;
+        border: 0;
+        border-top: 1px solid #ccc;
+    }
+
+    #vcomments blockquote {
+        margin: 15px 0;
+        border-left: 5px solid #42b983;
+        padding: 1rem 0.8rem 0.3rem 0.8rem;
+        color: #666;
+        background-color: rgba(66, 185, 131, .1);
+    }
+
+    #vcomments pre {
+        font-family: monospace, monospace;
+        padding: 1.2em;
+        margin: .5em 0;
+        background: #272822;
+        overflow: auto;
+        border-radius: 0.3em;
+        tab-size: 4;
+    }
+
+    #vcomments code {
+        font-family: monospace, monospace;
+        padding: 1px 3px;
+        font-size: 0.92rem;
+        color: #e96900;
+        background-color: #f8f8f8;
+        border-radius: 2px;
+    }
+
+    #vcomments pre code {
+        font-family: monospace, monospace;
+        padding: 0;
+        color: #e8eaf6;
+        background-color: #272822;
+    }
+
+    #vcomments pre[class*="language-"] {
+        padding: 1.2em;
+        margin: .5em 0;
+    }
+
+    #vcomments code[class*="language-"],
+    pre[class*="language-"] {
+        color: #e8eaf6;
+    }
+
+    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+        position: inherit;
+        margin-left: -1.3rem;
+        margin-right: 0.4rem;
+        margin-top: -1px;
+        vertical-align: middle;
+        left: unset;
+        visibility: visible;
+    }
+
+    #vcomments b,
+    strong {
+        font-weight: bold;
+    }
+
+    #vcomments dfn {
+        font-style: italic;
+    }
+
+    #vcomments small {
+        font-size: 85%;
+    }
+
+    #vcomments cite {
+        font-style: normal;
+    }
+
+    #vcomments mark {
+        background-color: #fcf8e3;
+        padding: .2em;
+    }
+
+    #vcomments table, th, td {
+        padding: 12px 13px;
+        border: 1px solid #dfe2e5;
+    }
+
+    table tr:nth-child(2n), thead {
+        background-color: #fafafa;
+    }
+
+    #vcomments table th {
+        background-color: #f2f2f2;
+        min-width: 80px;
+    }
+
+    #vcomments table td {
+        min-width: 80px;
+    }
+
+    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+        position: inherit;
+        margin-left: -1.3rem;
+        margin-right: 0.4rem;
+        margin-top: -1px;
+        vertical-align: middle;
+        left: unset;
+        visibility: visible;
+    }
+</style>
+
+<div class="card valine-card" data-aos="fade-up">
+    <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; top: 15px; padding-bottom: 5px;">
+        <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
+        <span>评论</span>
+    </div>
+    <div id="vcomments" class="card-content" style="display: grid">
+    </div>
+</div>
+
+<script src="/libs/valine/av-min.js"></script>
+<script src="/libs/valine/Valine.min.js"></script>
+<script>
+    new Valine({
+        el: '#vcomments',
+        appId: '6zGJBt4asI2jmw4kktGetnVo-9Nh9j0Va',
+        appKey: 'H89czPtGlCQlrsWFgYdsg5HV',
+        notify: 'false' === 'true',
+        verify: 'false' === 'true',
+        visitor: 'true' === 'true',
+        avatar: 'mm',
+        pageSize: '10',
+        lang: 'zh-cn',
+        placeholder: 'just go go'
+    });
+</script>
 
     
 
@@ -1030,7 +1345,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">3.8k</span>&nbsp;字
+                class="white-color">3.7k</span>&nbsp;字
             
             
             
