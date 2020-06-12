@@ -4,6 +4,56 @@
   
     
     <entry>
+      <title>My-Java-05</title>
+      <link href="/posts/undefined.html"/>
+      <url>/posts/undefined.html</url>
+      
+        <content type="html"><![CDATA[<p><img src="http://www.jinqiaojob.com/uploads/allimg/200116/1-200116214R1611.jpg" alt="Java04"></p><h3 id="流程控制"><a href="#流程控制" class="headerlink" title="流程控制"></a>流程控制</h3><ul><li>switch-case<br>与 if 不同的是，switch-case 只能完成等值判断，⽽⽆法完成判断⼤⼩。  </li></ul><p>如果是判断两个值是否相等，可以使⽤ switch-case，如果⽐较两个值的⼤⼩关系，则不能使⽤ switch-case。  </p><p>switch ⽀持 int、short、byte、char、枚举、String 类型，不⽀持 boolean 类型。  </p><p>基本语法  </p><pre><code>switch(变量){ case 值1: //业务代码 break； case 值2: //业务代码 breka; ... default: //业务代码 break; }</code></pre><p>case 判断变量是否等于某个值，default 表示所有的 case 都不成⽴的情况下所执⾏的代码。  </p><ul><li>1 奖励 2000</li><li>2 奖励 1000</li><li>3 奖励 500</li><li>否则没有奖励<pre><code>public static void main(String[] args) {int placing = 1;if(placing == 1) {System.out.println(&quot;奖励2000元&quot;);}else {if(placing == 2) {System.out.println(&quot;奖励1000元&quot;);}else {if(placing == 3) {System.out.println(&quot;奖励500元&quot;);}else{System.out.println(&quot;没有奖励&quot;);   } }}switch(placing) {case 1: System.out.println(&quot;奖励2000元&quot;);break;case 2: System.out.println(&quot;奖励1000元&quot;);break;case 3: System.out.println(&quot;奖励500元&quot;);break;default: System.out.println(&quot;没有奖励&quot;);break;}} </code></pre></li></ul><pre><code>###循环  for、while、do-while、foreach  循环四要素：  - 初始化循环变量  - 循环条件  - 循环体  - 更新循环变量  while</code></pre><p>初始化循环变量<br>while(循环条件){<br> 循环体<br> 更新循环变量<br>}</p><pre><code></code></pre><p>//初始化循环变量<br>int num = 0;<br>//循环条件<br>while(num &lt; 10) {<br> //循环体<br> System.out.println(“Hello World”);<br> //更新循环变量<br> num++; }</p><pre><code></code></pre><p> int num = 0;<br> String flag = “y”;<br> while(flag.equals(“y”)) {<br>   System.out.print(“请输⼊学⽣学号：”);<br>   Scanner scanner = new Scanner(System.in);<br>   int id = scanner.nextInt();<br>   switch(id) {<br>      case 1:<br>        System.out.println(“张三的成绩是96”);<br>        break;<br>     case 2:<br>        System.out.println(“李四的成绩是91”);<br>        break;<br>      case 3:<br>        System.out.println(“王五的成绩是89”);<br>        break;<br>    default:<br>        System.out.println(“请输⼊正确的学号”);<br>        break;<br> }<br>   System.out.print(“是否继续？y/n”);<br>   flag = scanner.next();<br>}<br> System.out.println(“感谢使⽤学⽣成绩查询系统”);</p><pre><code>do-while  </code></pre><p>//初始化循环变量<br>int num = 0;<br>do {<br> //循环体<br> System.out.println(“Hello World”);<br> //更新循环变量<br> num++; }while(num&lt;10);<br>//循环条件</p><pre><code></code></pre><p>Scanner scanner = new Scanner(System.in);<br>String result = “”;<br>do {<br> System.out.println(“张三参加体能测试，跑1000⽶”);<br> System.out.print(“是否合格？y/n”);<br> result = scanner.next();<br>}while(result.equals(“n”));<br>System.out.println(“合格，通过测试”);</p><pre><code>for  </code></pre><p>for(初始化循环变量;循环条件;更新循环变量){<br> 循环体<br>}</p><pre><code></code></pre><p>for(int num = 0;num &lt; 10;num++) {<br> System.out.println(“Hello World”);<br>}</p><pre><code>while、do-while、for 3种循环的区别  - 相同点：都遵循循环四要素，初始化循环变量、循环条件、循环体、更新循环变量。- 不同点：    -  while 和 do-while 适⽤于循环次数不确定的业务场景；for 适⽤于循环次数确定的场景。    -  while 和 for 都是先判断循环条件，再执⾏循环体；do-while 先执⾏循环体，再判断循环条件。  分别使⽤ while、do-while、for 循环输出 10 以内的所有奇数。  </code></pre><p>//while循环<br>int num = 0;<br>while(num &lt;= 10) {<br> if(num%2!=0) {<br>   System.out.println(num);<br> }<br> num++; }<br>//do-while循环<br>int num = 0;<br>do {<br> if(num%2!=0) {<br>   System.out.println(num);<br> }<br> num++; }while(num &lt;= 10);<br>//for循环<br>for(int num = 0;num &lt;= 10;num++) {<br> if(num%2!=0) {<br>   System.out.println(num);<br> }<br>}</p><pre><code>for 循环只适⽤于循环次数确定的场景下(for 也可以适⽤于循环次数不确定的场景，只不过⼀般不会⽤这种⽅式进⾏开发)，while 和 do-while 循环次数确定或者不确定都可以使⽤。</code></pre><p>String result = “n”;<br>for(;result.equals(“n”);) {<br> System.out.println(“张三参加体能测试，跑1000⽶”);<br> System.out.print(“是否合格？y/n”);<br> result = scanner.next();<br>}<br>System.out.println(“合格，通过测试”);<br>```</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> java </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> java </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>My-Java-04</title>
+      <link href="/posts/undefined.html"/>
+      <url>/posts/undefined.html</url>
+      
+        <content type="html"><![CDATA[<p><img src="http://www.jinqiaojob.com/uploads/allimg/200116/1-200116214R1611.jpg" alt="Java04"></p><h3 id="条件运算符"><a href="#条件运算符" class="headerlink" title="条件运算符"></a>条件运算符</h3><p>三元运算符、三⽬运算符、三元表达式<br>根据不同的条件给同⼀个变量赋不同的值，变量 = 条件?值1:值2.</p><h3 id="位运算符"><a href="#位运算符" class="headerlink" title="位运算符"></a>位运算符</h3><ul><li>⼗进制和⼆进制的转换  </li></ul><p>⼗进制转⼆进制：⽬标数除以2，若能除尽，该位记做0，若除不尽，该位记做1，再对商继续除以2，以<br>此类推，直到商为0，然后把每⼀位的结果反序组合就是对应的⼆进制。  </p><p>10：1010  </p><p>17：10001  </p><p>⼆进制转⼗进制：从⽬标数的最后侧起，本位的数值乘以本位的权重，权重就是2的第⼏位的位数减⼀<br>次⽅，将每⼀位的值进⾏相加，得到的结果就是对应的⼗进制。  </p><p>位运算符：&amp;（按位与）、｜（按位或）、^（按位异或）、&lt;&lt;（左移）、&gt;&gt;（右移）</p><p>变量1 &amp; 变量2：先把变量 1 和变量 2 转为⼆进制，每⼀位的数字⼀⼀对应，进⾏⽐较判断，若都为<br>1，则该位记做 1，否则记做 0。  </p><p>变量1 ｜ 变量2：先把变量 1 和变量 2 转为⼆进制，每⼀位的数字⼀⼀对应，进⾏⽐较判断，只要有⼀<br>个为 1，则该位记做 1，否则记做 0。  </p><p>变量1 ^ 变量2：先把变量 1 和变量 2 转为⼆进制，每⼀位的数字⼀⼀对应，进⾏⽐较判断，相同记做<br>0，不同记做 1。</p><p>变量1 &lt;&lt; 变量2：变量1乘以2的变量2次⽅<br>2 &lt;&lt; 3 : 2 * 8 = 16<br>变量1 &gt;&gt; 变量2：变量1除以2的变量2次⽅<br>2 &gt;&gt; 3：2/8 = 0  </p><h3 id="运算符的优先级"><a href="#运算符的优先级" class="headerlink" title="运算符的优先级"></a>运算符的优先级</h3><p>!&gt;算术运算符&gt;关系运算符&gt;逻辑运算符(&amp;&amp;&gt;||)   </p><h3 id="流程控制"><a href="#流程控制" class="headerlink" title="流程控制"></a>流程控制</h3><ul><li>if else<br>⽤来判断某个条件是否成⽴，然后执⾏不同的逻辑运算。<br>基本语法：  </li></ul><pre><code>if(判断条件){ //条件成⽴的代码}else{ //条件不成⽴的代码}</code></pre><ul><li>多重 if</li></ul><p>173 M<br>173～178 L<br>178 XL  </p><ul><li>if 后⾯必须跟条件</li><li>else 后⾯不能跟条件</li><li>else 后⾯可以根据{}，也可以跟 if</li></ul><p>$$ a^2-b^2=(a+b)(a-b) $$</p><p>n<sup>2</sup>=n+1<br>a=log<sub>2</sub>b</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> java </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> java </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>My Java 03</title>
       <link href="/posts/63998.html"/>
       <url>/posts/63998.html</url>
