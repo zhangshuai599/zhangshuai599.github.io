@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>My-java-06</title>
+      <link href="/posts/3.html"/>
+      <url>/posts/3.html</url>
+      
+        <content type="html"><![CDATA[<h3 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h3><p>数组就是⼀种可以存储⼤量数据类型相同的变量的数据结构，数组就是⼀个具有相同数据类型的数据集<br>合。<br>数组中的数据必须是同⼀种数据类型的。</p><ul><li>数组的基本要素</li><li>数组名称</li><li>数组元素</li><li>元素下标<br>数据类型<br>数组本身就是⼀个变量，数组名称就是变量名，数组中保存的每⼀个数据都会有⼀个下标（从 0开始）</li></ul><pre><code>//给数组赋值array[0] = 1;array[1] = 2;array[2] = 3;array[3] = 4;array[4] = 5;array[5] = 6;int[] array2 = {1,2,3,4,5,6};int[] array3 = new int[]{1,2,3,4,5,6};</code></pre><h3 id="数组常⻅的错误"><a href="#数组常⻅的错误" class="headerlink" title="数组常⻅的错误"></a>数组常⻅的错误</h3><ul><li>数据类型不匹配。  </li><li>边声明边赋值的⽅式，代码必须写在同⼀⾏，不能换⾏。  </li><li>数组下标越界。  <h3 id="数组的常⽤操作及⽅法"><a href="#数组的常⽤操作及⽅法" class="headerlink" title="数组的常⽤操作及⽅法"></a>数组的常⽤操作及⽅法</h3></li><li>求数组的最⼤值  </li><li>求数组的最⼩值  </li><li>在数组的指定位置插⼊数据  </li><li>对数组进⾏排序</li></ul><h3 id="⼆维数组"><a href="#⼆维数组" class="headerlink" title="⼆维数组"></a>⼆维数组</h3><p>⼆维数组简单理解即⼀维数组中保存的值是另外⼀个⼀维数组。<br>变量、数据类型、流程控制、循环、数组。<br>⽤户管理系统  </p><ul><li>查询⽤户：将系统中保存的全部⽤户信息在控制台打印输出。  </li><li>添加⽤户：向系统中添加新的⽤户信息，如果添加的⽤户已经存在，给出提示信息。</li><li>删除⽤户：输⼊⽤户名，进⾏删除操作，若输⼊的⽤户名不存在，给出提示信息。</li><li>账号冻结：输⼊⽤户名，进⾏冻结操作，若输⼊的⽤户名不存在或者该⽤户已经被冻结，给出相应<br>提示。  </li><li>账号解冻：输⼊⽤户名，进⾏解封操作，若输⼊的⽤户名不存在或者该⽤户状态正常，给出相应提<br>示。  </li><li>退出系统：跳出循环，给出提示信息。  </li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> java </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> java </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>My-Java-05</title>
       <link href="/posts/2.html"/>
       <url>/posts/2.html</url>
