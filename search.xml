@@ -5,8 +5,8 @@
     
     <entry>
       <title>java面向对象之多态</title>
-      <link href="/posts/5.html"/>
-      <url>/posts/5.html</url>
+      <link href="/posts/6.html"/>
+      <url>/posts/6.html</url>
       
         <content type="html"><![CDATA[<h2 id="Java面向对象之多态"><a href="#Java面向对象之多态" class="headerlink" title="Java面向对象之多态"></a>Java面向对象之多态</h2><h3 id="一、复习"><a href="#一、复习" class="headerlink" title="一、复习"></a>一、复习</h3><p>面向对象(OO);<br>三个特点：<br>1、封装<br>2、继承：达到了真正意义上的代码复用。<br>  class 子类 extends 父类{    }<br>  子类就拥有了父类的所有非private的属性或方法了<br>3、多态<br>二、方法的覆盖（override）overload<br>面试题：覆盖和重载的区别？<br>面试题：override和overload的区别？<br>答：覆盖发生在两个类，面向对象语言，重载发生在一个类，任何语言   </p><p>覆盖只会覆盖方法（凡是方法就是覆盖，覆盖就指的是方法）<br>为啥要覆盖啊？<br>父类的方法不能满足子类的需求，子类需要重新定义方法的内容（方法名不变，里面的语句变了）。这个就是方法的覆盖。  </p><p>属性的重新定义叫做属性的隐藏  </p><h3 id="三、多态"><a href="#三、多态" class="headerlink" title="三、多态"></a>三、多态</h3><p>·一个子类的对象，可以赋值给一个父类的变量。<br>Son son = new Son();     //创建对象<br>Father f = new Son();     // 多态，向上转型        </p><pre><code>     和尚（父类）       鲁智深（子类）                                        </code></pre><p>·一个接口的实现类的对象，可以赋给接口的变量。<br>多态的好处：可以节省代码量，可以解耦合，减少依赖  </p><h3 id="四、final关键字的总结"><a href="#四、final关键字的总结" class="headerlink" title="四、final关键字的总结"></a>四、final关键字的总结</h3><p>final 是一个关键字。必须小写。“不变”的意思<br>可以修饰变量，如果修饰变量，那么这个就变成了常量。<br>final修饰类，那么它没有子类。不需要子类扩展（断子绝孙类、最总类）<br>final修饰方法，那么子类是不可以覆盖父类的这个方法的。这个方法称为最终方法</p>]]></content>
       
